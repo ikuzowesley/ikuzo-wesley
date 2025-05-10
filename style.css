@@ -1,0 +1,244 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #f39c12;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+    }
+}
+
+/* Project page styles */
+.project-header {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.project-main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Contact page styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #d17e0a;
+}
+
+form input[type="reset"] {
+    background-color: #777;
+}
+
+form input[type="reset"]:hover {
+    background-color: #555;
+}
+
+.project-main section {
+    margin-bottom: 20px;
+}
+
+.project-main h2 {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.project-main ul {
+    list-style: disc inside;
+}
+
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #f39c12;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #f39c12;
+    color: white;
+}
